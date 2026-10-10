@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Desafios JS - Validação, ViaCEP e PokéAPI</title>
+  <style>
+    body { font-family: sans-serif; margin: 20px; line-height: 1.5; }
+    section { margin-bottom: 30px; border-bottom: 1px solid #ccc; padding-bottom: 20px; }
+    .status { font-weight: bold; color: #555; }
+    .erro { color: red; }
+    .sucesso { color: green; }
+    dl { background: #f4f4f4; padding: 10px; border-radius: 5px; }
+    dt { font-weight: bold; }
+    img { display: block; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <!Parte 2: Consulta ViaCEP>
+  <section>
+    <h2>Parte 2 – Busca de CEP (ViaCEP)</h2>
+    <input type="text" id="cep" placeholder="Digite o CEP (apenas números)">
+    <button id="btnBuscarCep">Buscar CEP</button>
+    
+    <p id="statusCep" class="status"></p>
+    <dl id="resultadoCep"></dl>
+
+    <h3>Histórico de CEPs Pesquisados</h3>
+    <ul id="historicoCep"></ul>
+  </section>
+
+  <!Parte 3: Desafio Mini PokéAPI>
+  <section>
+    <h2>Parte 3 – Mini Pokémon</h2>
+    <input type="text" id="nomePokemon" placeholder="Nome do Pokémon">
+    <button id="btnBuscarPokemon">Buscar Pokémon</button>
+
+    <p id="statusPokemon" class="status"></p>
+    <div id="resultadoPokemon"></div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
